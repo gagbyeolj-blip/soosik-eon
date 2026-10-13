@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수식언 캐처</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="game">
+        <header>
+            <p class="eyebrow">KOREAN GRAMMAR GAME</p>
+            <h1>수식언 캐처</h1>
+            <p class="subtitle">하늘에서 떨어지는 수식언을 잡아 봐!</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat">
+                <span>점수</span>
+                <strong id="score">0</strong>
+            </div>
+            <div class="stat">
+                <span>생명</span>
+                <strong id="lives">❤️❤️❤️</strong>
+            </div>
+            <div class="stat">
+                <span>최고 점수</span>
+                <strong id="best">0</strong>
+            </div>
+        </section>
+
+        <div id="feedback" aria-live="polite">
+            시작 버튼을 누르고 단어를 분류해 봐!
+        </div>
+
+        <section id="arena" aria-label="단어가 떨어지는 게임 영역">
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+
+            <div id="notice" class="notice">
+                <div class="notice-card">
+                    <span class="notice-icon">☁️</span>
+                    <h2>수식언 캐처</h2>
+                    <p>관형사와 부사를 알맞은 상자에 넣어 봐!</p>
+                    <p class="small">단어를 잡고 끌어서 상자에 놓으면 돼.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="baskets">
+            <div class="basket" data-type="determiner">
+                <span class="basket-icon">📘</span>
+                <strong>관형사</strong>
+                <span class="basket-example">새 가방 · 모든 사람</span>
+            </div>
+
+            <div class="basket" data-type="adverb">
+                <span class="basket-icon">📙</span>
+                <strong>부사</strong>
+                <span class="basket-example">매우 예쁘다 · 빨리 달리다</span>
+            </div>
+        </section>
+
+        <button id="start" class="start-button">게임 시작하기</button>
+
+        <p class="hint">
+            관형사는 체언을 꾸미고, 부사는 주로 용언이나 다른 부사를 꾸며.
+        </p>
+    </main>
+</body>
+</html>

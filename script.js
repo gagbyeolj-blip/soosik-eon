@@ -12,6 +12,7 @@ const startBtn = document.getElementById("start");
 const baskets = [...document.querySelectorAll(".basket")];
 
 
+
 const words = [
     // 관형사
     { word: "새", type: "determiner" },
@@ -26,9 +27,24 @@ const words = [
     { word: "온", type: "determiner" },
     { word: "맨", type: "determiner" },
     { word: "첫", type: "determiner" },
+    { word: "한", type: "determiner" },
+    { word: "두", type: "determiner" },
+    { word: "세", type: "determiner" },
+    { word: "네", type: "determiner" },
+    { word: "다섯", type: "determiner" },
+    { word: "여섯", type: "determiner" },
+    { word: "일곱", type: "determiner" },
+    { word: "여덟", type: "determiner" },
+    { word: "아홉", type: "determiner" },
+    { word: "열", type: "determiner" },
+    { word: "이", type: "determiner" },
+    { word: "그", type: "determiner" },
+    { word: "저", type: "determiner" },
+    { word: "요", type: "determiner" },
+    { word: "고", type: "determiner" },
+    { word: "조", type: "determiner" },
     { word: "이런", type: "determiner" },
     { word: "그런", type: "determiner" },
-    { word: "저런", type: "determiner" },
 
     // 부사
     { word: "매우", type: "adverb" },
@@ -54,7 +70,43 @@ const words = [
     { word: "곧", type: "adverb" },
     { word: "문득", type: "adverb" },
     { word: "조용히", type: "adverb" },
-    { word: "열심히", type: "adverb" }
+    { word: "열심히", type: "adverb" },
+    { word: "정말", type: "adverb" },
+    { word: "참", type: "adverb" },
+    { word: "잘", type: "adverb" },
+    { word: "못", type: "adverb" },
+    { word: "안", type: "adverb" },
+    { word: "매일", type: "adverb" },
+    { word: "항상", type: "adverb" },
+    { word: "늘", type: "adverb" },
+    { word: "이따금", type: "adverb" },
+    { word: "종종", type: "adverb" },
+    { word: "드디어", type: "adverb" },
+    { word: "마침내", type: "adverb" },
+    { word: "이미", type: "adverb" },
+    { word: "아마", type: "adverb" },
+    { word: "과연", type: "adverb" },
+    { word: "설마", type: "adverb" },
+    { word: "어서", type: "adverb" },
+    { word: "어서어서", type: "adverb" },
+    { word: "문득", type: "adverb" },
+    { word: "퍽", type: "adverb" },
+    { word: "제법", type: "adverb" },
+    { word: "한참", type: "adverb" },
+    { word: "바로", type: "adverb" },
+    { word: "도로", type: "adverb" },
+    { word: "차마", type: "adverb" },
+    { word: "도저히", type: "adverb" },
+    { word: "도무지", type: "adverb" },
+    { word: "결코", type: "adverb" },
+    { word: "전혀", type: "adverb" },
+    { word: "별로", type: "adverb" },
+    { word: "겨우", type: "adverb" },
+    { word: "간신히", type: "adverb" },
+    { word: "마구", type: "adverb" },
+    { word: "함부로", type: "adverb" },
+    { word: "슬쩍", type: "adverb" },
+    { word: "살며시", type: "adverb" }
 ];
 
 
